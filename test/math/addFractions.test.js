@@ -10,8 +10,12 @@ describe('Add fractions tests', function () {
         expect(addFraction(0, 3)).toBe(3);
     })
 
-    it('A non zero plus non zero', function () {
+    it('A non zero plus zero', function () {
         expect(addFraction(5, 0)).toBe(5);
+    })
+
+    it('A non zero plus non zero', function () {
+        expect(addFraction(3, 4)).toBe(7);
     })
 })
 
