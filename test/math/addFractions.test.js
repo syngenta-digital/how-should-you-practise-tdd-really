@@ -17,5 +17,9 @@ describe('Add fractions tests', function () {
     it('A non zero plus non zero', function () {
         expect(addFraction(3, 4)).toBe(7);
     })
+
+    it('A negative input with a negative result', function () {
+        expect(addFraction(-3, 1)).toBe(-2);
+    })
 })
 
