@@ -1,5 +1,5 @@
 function addFraction(a, b) {
-    return 0;
+    return b;
 }
 
 module.exports = addFraction;
