@@ -1,7 +1,7 @@
 import Fraction from '../../src/math/Fraction';
 
 describe('Add fractions tests', function () {
-    it('A zero plus zero test', function () {
+    it('A zero plus zero', function () {
         expect(new Fraction(0).addFraction(new Fraction(0)).intValue).toBe(0);
     })
 
@@ -20,5 +20,12 @@ describe('Add fractions tests', function () {
     it('A negative input with a negative result', function () {
         expect(new Fraction(-3).addFraction(new Fraction(1)).intValue).toBe(-2);
     })
+
+    it('A non trivial denominator', function () {
+        let firstFraction = new Fraction(1,5);
+        let secondFraction = new Fraction(2,5);
+        expect(secondFraction.getNumerator).toBe(3);
+        expect(firstFraction.getDenominator).toBe(5);
+    });
 })
 

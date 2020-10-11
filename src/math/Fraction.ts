@@ -1,16 +1,27 @@
-export default class Fraction {
-  private someNumber: number;
+import { throws } from "assert";
 
-  constructor(someNumber: number) {
-    this.someNumber = someNumber;
+export default class Fraction {
+  private numerator: number;
+  private denominator: number;
+
+  constructor(numerator: number, denominator: number = 1){
+      this.numerator = numerator;
+      this.denominator = denominator;
   }
 
   addFraction(that: Fraction) {
-    return new Fraction(this.someNumber + that.someNumber);
+    return new Fraction(this.numerator + that.numerator);
   }
 
   get intValue() {
-      return this.someNumber
+    return this.numerator;
+  }
+
+  get getNumerator() {
+    return this.numerator;
+  }
+  get getDenominator() {
+    return this.denominator;
   }
 }
 
