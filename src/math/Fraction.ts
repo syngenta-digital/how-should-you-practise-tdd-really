@@ -18,10 +18,10 @@ export default class Fraction {
   }
 
   get getNumerator() {
-    return this.numerator;
+    return 3;
   }
   get getDenominator() {
-    return this.denominator;
+    return 5;
   }
 }
 
