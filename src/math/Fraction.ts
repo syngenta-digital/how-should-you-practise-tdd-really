@@ -18,5 +18,13 @@ export default class Fraction {
   get getDenominator() {
     return this.denominator;
   }
+
+  equals(other: Fraction){
+    if (other instanceof Fraction){
+      return (other.numerator == this.numerator) &&
+        (other.denominator ==this.denominator)
+    }
+    return false;
+  }
 }
 
