@@ -10,7 +10,7 @@ export default class Fraction {
   }
 
   addFraction(that: Fraction) {
-    return new Fraction(this.numerator + that.numerator);
+    return new Fraction(this.numerator + that.numerator, this.denominator);
   }
 
   get intValue() {
@@ -18,10 +18,10 @@ export default class Fraction {
   }
 
   get getNumerator() {
-    return 3;
+    return this.numerator;
   }
   get getDenominator() {
-    return 5;
+    return this.denominator;
   }
 }
 
