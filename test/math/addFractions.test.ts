@@ -22,11 +22,7 @@ describe('Add fractions tests', function () {
     })
 
     it('A non trivial denominator', function () {
-        let firstFraction = new Fraction(1,5);
-        let secondFraction = new Fraction(2,5);
-        let result = firstFraction.addFraction(secondFraction)
-        expect(result.getNumerator).toBe(3);
-        expect(result.getDenominator).toBe(5);
+        expect(new Fraction(1,5).addFraction(new Fraction(2,5))).toEqual(new Fraction(3,5))
     });
 })
 
