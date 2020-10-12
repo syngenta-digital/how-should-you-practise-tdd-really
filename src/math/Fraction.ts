@@ -1,4 +1,3 @@
-import { throws } from "assert";
 
 export default class Fraction {
   private numerator: number;
@@ -11,10 +10,6 @@ export default class Fraction {
 
   addFraction(that: Fraction) {
     return new Fraction(this.numerator + that.numerator, this.denominator);
-  }
-
-  get intValue() {
-    return this.numerator;
   }
 
   get getNumerator() {
