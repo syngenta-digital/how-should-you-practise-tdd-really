@@ -18,7 +18,5 @@ export default class Fraction {
   get getDenominator() {
     return this.denominator;
   }
-
-
 }
 
